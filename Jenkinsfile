@@ -1,8 +1,8 @@
+
 pipeline {
     agent any
 
     stages {
-
         stage('Checkout') {
             steps {
                 echo 'Getting application source code from GitHub'
@@ -16,6 +16,5 @@ pipeline {
                 sh 'ls -la'
             }
         }
-
     }
 }
