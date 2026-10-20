@@ -25,7 +25,7 @@ pipeline {
                     . .venv/bin/activate
                     pip install -r requirement.txt
                     pip install pytest
-                    pytest -v
+                    PYTHONPATH=. python -m pytest -v
                 '''
             }
         }
